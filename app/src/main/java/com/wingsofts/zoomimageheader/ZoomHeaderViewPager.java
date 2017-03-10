@@ -33,20 +33,20 @@ public class ZoomHeaderViewPager extends ViewPager {
   }
 
 
-  //改变系统绘制顺序
+
   @Override protected int getChildDrawingOrder(int childCount, int i) {
 
     int position = getCurrentItem();
     if(position<0){
       return i;
     }else{
-      if(i == childCount - 1){//这是最后一个需要刷新的item
+      if(i == childCount - 1){
         if(position>i){
           position=i;
         }
         return position;
       }
-      if(i == position){//这是原本要在最后一个刷新的item
+      if(i == position){
         return childCount - 1;
       }
     }

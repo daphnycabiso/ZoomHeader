@@ -11,6 +11,8 @@
     android:paddingRight="16dp"
     android:paddingTop="10dp"
     >
+
+
   <ImageView
 
       android:id="@+id/imageView"
@@ -18,8 +20,10 @@
       android:layout_width="70dp"
       android:layout_height="70dp"
       android:scaleType="centerCrop"
-      android:src="@drawable/pizza"
+      android:src="@drawable/elva"
       />
+
+
   <LinearLayout
       android:gravity="center_vertical"
       android:layout_width="match_parent"
@@ -27,22 +31,24 @@
       android:layout_marginLeft="10dp"
       android:orientation="horizontal"
       >
+
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
+
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="魔法厨房(龙美店)"
+          android:text="ELVA"
           android:textColor="#000"
           android:textSize="16sp"
           />
       <TextView
           android:gravity="right"
           android:layout_marginTop="5dp"
-          android:text = "番禺区 2.1km"
+          android:text = "Sale Price: $28.62"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           />
@@ -50,10 +56,13 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_marginTop="5dp"
-          android:text="火锅"
+          android:text="Same Day Delivery! Order must be received before 2pm Mon - Fri and 10am Sat"
           />
+
     </LinearLayout>
 
   </LinearLayout>
 
+
 </LinearLayout>
+

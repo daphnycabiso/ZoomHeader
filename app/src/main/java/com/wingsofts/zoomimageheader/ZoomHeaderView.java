@@ -32,12 +32,12 @@ public class ZoomHeaderView extends LinearLayout {
   private RecyclerView mRecyclerView;
   private TextView mCloseTxt;
   private RelativeLayout mBottomView;
-  //图片放到最大时候的y
+
   private float mMaxY;
 
   private final int ANIMATE_LENGTH = 300;
 
-  //底部栏的起始Y
+
   private int mBottomY;
 
   public ZoomHeaderView(Context context) {
@@ -70,12 +70,12 @@ public class ZoomHeaderView extends LinearLayout {
         float moveY = ev.getY() - iDownY;
         float currentY = getY();
 
-        //向上滑动viewpager整体移动
+
         if (currentY + moveY < 0 && currentY + moveY > -getHeight() / 2) {
           doPagerUp(moveY, currentY);
         }
 
-        //向下移动
+
         if (currentY + moveY > 0 && currentY + moveY < 800) {
           doPagerDown(moveY, currentY);
           return true;
@@ -86,18 +86,18 @@ public class ZoomHeaderView extends LinearLayout {
 
         float upY = ev.getY() - iDownY;
         float currentUpY = getY();
-        //超过阀值 结束Activity
+
 
         if (upY + currentUpY > 190) {
           finish();
         }
 
-        //不在任何阀值  恢复
+
         if (currentUpY + upY > -getHeight() / 4 && currentUpY + upY < 190) {
           restore(upY + currentUpY);
         }
 
-        //超过展开阀值
+
         if (upY + currentUpY < -getHeight() / 4) {
           if (upY + currentUpY < mMaxY) {
             expand(mMaxY);
@@ -151,10 +151,9 @@ public class ZoomHeaderView extends LinearLayout {
     restoreVa.setDuration(ANIMATE_LENGTH);
     restoreVa.start();
 
-    //禁止滑动
+
     ((CtrlLinearLayoutManager) mRecyclerView.getLayoutManager()).setScrollEnabled(false);
 
-    //底部隐藏
 
     ValueAnimator bottomAnimate =
         ValueAnimator.ofFloat(mBottomView.getY(), mBottomY + mBottomView.getHeight());
@@ -182,10 +181,9 @@ public class ZoomHeaderView extends LinearLayout {
     va.setInterpolator(new DecelerateInterpolator());
     va.setDuration(ANIMATE_LENGTH);
     va.start();
-    //允许滑动
+
     ((CtrlLinearLayoutManager) mRecyclerView.getLayoutManager()).setScrollEnabled(true);
 
-    //底部上移
 
     ValueAnimator bottomAnimate = ValueAnimator.ofFloat(mBottomView.getY(), mBottomY);
     bottomAnimate.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {

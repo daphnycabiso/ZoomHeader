@@ -26,7 +26,7 @@
         android:layout_weight="1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="番禺区番禺大道北543号龙美段(天安科技圆旁)"
+        android:text="Cebu City, Philippines      +61 2 8046 6250"
         android:textColor="#000"
         android:textSize="16sp"
         />

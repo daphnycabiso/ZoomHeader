@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="100元代金券"
+        android:text="Need it delivered today?"
         android:textColor="#000"
         android:textSize="16sp"
         />
@@ -29,14 +29,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="周一至周日 部分商品可用|免预约"
+        android:text="Order before 2pm for same day delivery!"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
-        android:text="￥89"
+        android:text="$28.62"
         android:textColor="#39c4b6"
         android:textSize="18sp"
         />
@@ -52,7 +52,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="已售26417"
+        android:text="Philippines"
         />
     <TextView
         android:layout_marginTop="10dp"
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/button_white_bg"
-        android:text="购买"
+        android:text="BUY"
         android:textColor="#ffa400"
         />
   </LinearLayout>

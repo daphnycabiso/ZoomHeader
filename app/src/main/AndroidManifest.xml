@@ -8,17 +8,20 @@
       android:label="@string/app_name"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity
-        android:name=".MainActivity"
-        android:theme="@style/translucent">
 
-    </activity>
-    <activity android:name=".HomeActivity">
+    <activity android:name=".MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
+        <activity
+
+            android:name=".HomeActivity"
+            android:theme="@style/translucent">
+
+        </activity>
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
+
     </activity>
   </application>
 

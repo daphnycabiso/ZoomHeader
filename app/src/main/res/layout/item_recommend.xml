@@ -15,12 +15,12 @@
       android:textColor="#000"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="推荐菜"
+      android:text="Gift Includes: "
       />
 
   <TextView
       android:textColor="#000"
-      android:text="酸菜鱼 茄子豆角 千页豆腐 小笼包 鱼头排骨 茶叶虾"
+      android:text="This unusual bouquet of long-lasting soft Carnations and delicate Babies Breath in gentle pastel colours impart a cosy feeling of a nurturing home, a welcoming friendly family life and motherhood. Elva is the perfect gift to welcome a little girl into the world, or to celebrate a loving mother or grandmother. The name Elva is Irish and derives from the domestic matriarch Goddess of the household. The vase in the picture is not included, however if you would like to make your flower gift extra special, we recommend you send a Premium Vase for your loved one to house their gorgeous carnations and many more flowers in the future."
       android:layout_marginTop="20dp"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
